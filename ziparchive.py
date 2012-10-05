@@ -13,6 +13,16 @@ def ziparchive(filepath, zfile=None):
 
 		An optional second argument can be provided to specify a zipfile name, 
 		by default the basename will be used with a .zip extension
+
+		>>>
+		>>> ziparchive('foo/data/')
+		>>> zf = zipfile.ZipFile('data.zip', 'r')
+		>>> 
+
+		>>> 
+		>>> ziparchive('foo/data/', 'foo/eggs.zip')
+		>>> zf = zipfile.ZipFile('foo/eggs.zip', 'r')
+		>>> 
 	'''
 	if zfile is None:
 		zfile = os.path.basename(filepath.strip('/')) + '.zip'
