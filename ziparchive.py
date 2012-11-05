@@ -1,5 +1,5 @@
 #!/usr/local/bin/python
-''' Usage: ziparchive.py [zipfile] [files]
+''' Usage: ziparchive.py [files] [zipfile]
 
 	create/overwrite compressed archive file
 '''
